@@ -2,7 +2,7 @@
 
 setcookie('test', time());
 ob_start();
-print_r($_COOKIE); 
+//print_r($_COOKIE); 
 $content = ob_get_contents();
 $content = str_replace(" ", '&nbsp;', $content);
 ob_clean();
